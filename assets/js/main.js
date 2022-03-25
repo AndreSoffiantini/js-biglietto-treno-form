@@ -6,11 +6,11 @@ function formData() {
     // Estrarre i dati dell'utente dal form
     let user_name = document.getElementById("userFullName").value;
     let user_km = document.getElementById("userKm").value;
-    let user_age = document.getElementById("userAge").value;
+    let age_range = document.getElementById("userAge").value;
 
     console.log(`Nome utente: ${user_name}`);
     console.log(`Kilometraggio: ${user_km}`);
-    console.log(`Età: ${user_age}`);
+    console.log(`Età: ${age_range}`);
 
     // Calcolare il prezzo in base al kilometraggio
     const price_km = 0.21 * `${user_km}`;
@@ -19,12 +19,12 @@ function formData() {
     // Calcolare il prezzo finale applicando gli sconti per l'età
     let final_price = price_km;
 
-    if (user_age < 18) {
+    if (age_range == "minor") {
 
         // sconto per minorenni
         final_price = final_price * 0.8;
 
-    } else if (user_age > 65) {
+    } else if (age_range == "elder") {
 
         // sconto per over 65
         final_price = final_price * 0.6;
