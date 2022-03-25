@@ -9,3 +9,7 @@ body {
 .user_input_data h5 {
     color: var(--dark-danger);
 }
+
+.user_output_data {
+    height: 250px;
+}
