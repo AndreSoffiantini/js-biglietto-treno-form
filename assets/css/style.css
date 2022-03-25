@@ -5,3 +5,7 @@
 body {
     background-color: var(--dark-danger);
 }
+
+.user_input_data h5 {
+    color: var(--dark-danger);
+}
