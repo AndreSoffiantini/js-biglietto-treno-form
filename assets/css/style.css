@@ -1,0 +1,7 @@
+:root {
+    --dark-danger: #B91450;
+}
+
+body {
+    background-color: var(--dark-danger);
+}
