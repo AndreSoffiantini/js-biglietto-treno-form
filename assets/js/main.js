@@ -37,6 +37,18 @@ function formData() {
     let rounded_final_price = final_price.toFixed(2);
     console.log(`Prezzo scontato arrotondato: ${rounded_final_price}`);
 
-    // Stampare a schermo il prezzo finale
+    // Stampare a schermo il nome dell'utente
+    document.getElementById("nameShowed").innerHTML = user_name;
 
+    // Stampare a schermo il tipo di sconto applicato
+    document.getElementById("discountShowed").innerHTML = `Offerta ${age_range}`;
+
+    // Stampare a schermo il numero della carrozza
+    document.getElementById("TrainCar").innerHTML = Math.ceil(1 + Math.random() * 10);
+
+    // Stampare a schermo il codice CP
+    document.getElementById("CPCode").innerHTML = Math.ceil(Math.random() * 10000);
+
+    // Stampare a schermo il prezzo del biglietto
+    document.getElementById("ticketPrice").innerHTML = `${rounded_final_price} €`;
 };
