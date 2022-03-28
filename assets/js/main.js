@@ -19,12 +19,12 @@ function formData() {
     // Calcolare il prezzo finale applicando gli sconti per l'età
     let final_price = price_km;
 
-    if (age_range == "minor") {
+    if (age_range == "Minorenne") {
 
         // sconto per minorenni
         final_price = final_price * 0.8;
 
-    } else if (age_range == "elder") {
+    } else if (age_range == "Over 65") {
 
         // sconto per over 65
         final_price = final_price * 0.6;
